@@ -11,10 +11,7 @@ $ convert -size 150x150 -depth 32 SSPKU_CBC.rgba SSPKU_CBC.png
 ###（3）CTR    
 $ gmssl enc -sms4-ctr -e -in SSPKU.rgba -out SSPKU_CTR.rgba -k XZsP@ssw0rd     
 $ convert -size 150x150 -depth 32 SSPKU_CTR.rgba SSPKU_CTR.png    
-###（4）OCF    
-$ gmssl enc -sms4-ocf -e -in SSPKU.rgba -out SSPKU_OCF.rgba -k XZsP@ssw0rd     
-$ convert -size 150x150 -depth 32 SSPKU_OCF.rgba SSPKU_OCF.png     
-###（5）CFB    
+###（4）CFB    
 $ gmssl enc -sms4-cfb -e -in SSPKU.rgba -out SSPKU_CFB.rgba -k XZsP@ssw0rd     
 $ convert -size 150x150 -depth 32 SSPKU_CFB.rgba SSPKU_CFB.png     
 
