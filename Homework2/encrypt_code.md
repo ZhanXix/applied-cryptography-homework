@@ -8,6 +8,8 @@ $ convert -size 150x150 -depth 32 SSPKU_ECB.rgba SSPKU_ECB.png
 ###（2）CBC    
 $ gmssl enc -sms4-cbc -e -in SSPKU.rgba -out SSPKU_CBC.rgba -k XZsP@ssw0rd     
 $ convert -size 150x150 -depth 32 SSPKU_CBC.rgba SSPKU_CBC.png    
-    
-    
+###（2）CTR    
+$ gmssl enc -sms4-ctr -e -in SSPKU.rgba -out SSPKU_CTR.rgba -k XZsP@ssw0rd     
+$ convert -size 150x150 -depth 32 SSPKU_CTR.rgba SSPKU_CTR.png 
+
 注：全部在Ubuntu系统下以命令行形式完成    
